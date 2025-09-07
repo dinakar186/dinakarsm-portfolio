@@ -1,4 +1,44 @@
-/* Base Reset */
+/* ===== Mobile Responsive Patch ===== */
+@media only screen and (max-width: 768px) {
+  /* Containers & sections */
+  .container, .section, .project, .certificate {
+    width: 100% !important;
+    padding: 10px !important;
+    box-sizing: border-box;
+  }
+
+  /* Headings */
+  h1 { font-size: 1.5rem !important; }
+  h2 { font-size: 1.3rem !important; }
+  h3 { font-size: 1.1rem !important; }
+
+  /* Images & videos */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Nav/menu */
+  nav, .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Buttons & links */
+  button, a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Any grids */
+  .grid, .projects-grid, .certificates-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+}
 * {
   margin: 0;
   padding: 0;
