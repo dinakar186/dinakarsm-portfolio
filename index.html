@@ -1,206 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="img.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dinakar S M | Portfolio</title>
+  <link rel="icon" type="image/png" href="img.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="page.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-      <div class="nav-icons">
-        <a href="https://wa.me/917639549105" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://github.com/dinakar186" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/dinakarsm/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="tel:+917639549105" title="Phone"><i class="fas fa-phone"></i></a>
-        <a href="mailto:dinakarkumaran06@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="Dinakar_SM_Resume.pdf" download class="resume-btn" title="Download Resume" target="_blank">Download Resume</a>
-      </div>
-    </nav>
+<body class="bg-[#121212] text-[#e0e0e0] font-sans scroll-smooth">
 
-    <section class="hero animate">
-      <div class="hero-text slide-in-left">
-        <h1>Dinakar S M</h1>
-        <h4>Electrical Engineer | Embedded Systems | Data Analyst</h4>
-      </div>
-      <div class="hero-image slide-in-right">
-        <img src="dk_suit_passport.jpg" alt="Dinakar S M Photo" />
-      </div>
-    </section>
-  </header>
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 bg-[#1f1f1f] border border-[#333] rounded-lg max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-center p-4 gap-4">
+  <ul class="flex flex-wrap md:flex-row gap-4 md:gap-8 justify-center">
+    <li><a href="#education" class="hover:text-[#bb86fc] font-semibold">Education</a></li>
+    <li><a href="#certifications" class="hover:text-[#bb86fc] font-semibold">Certifications</a></li>
+    <li><a href="#skills" class="hover:text-[#bb86fc] font-semibold">Skills</a></li>
+    <li><a href="#projects" class="hover:text-[#bb86fc] font-semibold">Projects</a></li>
+    <li><a href="#contact" class="hover:text-[#bb86fc] font-semibold">Contact</a></li>
+  </ul>
+  <div class="flex flex-wrap gap-4 justify-center mt-2 md:mt-0">
+    <a href="https://wa.me/917639549105" target="_blank" title="WhatsApp" class="hover:text-[#bb86fc]"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/dinakar186" target="_blank" title="GitHub" class="hover:text-[#bb86fc]"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/dinakarsm/" target="_blank" title="LinkedIn" class="hover:text-[#bb86fc]"><i class="fab fa-linkedin"></i></a>
+    <a href="tel:+917639549105" title="Phone" class="hover:text-[#bb86fc]"><i class="fas fa-phone"></i></a>
+    <a href="mailto:dinakarkumaran06@gmail.com" title="Email" class="hover:text-[#bb86fc]"><i class="fas fa-envelope"></i></a>
+    <a href="Dinakar_SM_Resume.pdf" download target="_blank" class="bg-[#bb86fc] text-[#121212] px-4 py-1 rounded-full font-bold hover:bg-[#9a67ea]">Download Resume</a>
+  </div>
+</header>
 
-  <!-- Education Section -->
-  <section id="education" class="animate">
-    <h2>Education</h2>
-    <table class="education-table">
-      <thead>
-        <tr>
-          <th>College</th>
-          <th>Years</th>
-          <th>Grade</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="college-cell">
-            <img src="srv.png" alt="SRV School" class="college-img" />
-            SRV Mat. Hr. Sec. School
-          </td>
-          <td>2019 - 2023</td>
-          <td>89.88%</td>
-        </tr>
-        <tr>
-          <td class="college-cell">
-            <img src="eec.png" alt="Easwari Engineering College" class="college-img" />
-            Easwari Engineering College
-          </td>
-          <td>2023 - Present</td>
-          <td>8.59 CGPA (till 4th semester)</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- Certifications Section -->
-<section id="certifications" class="animate">
-  <h2>Certifications</h2>
-  <div class="certifications-container">
-    <div class="certification">
-      <h3>SQL (Basic) - HackerRank</h3>
-      <span class="cert-date">Issued: Aug 2025</span><br>
-      <a href="https://www.hackerrank.com/certificates/e943e226b242" target="_blank">Verify Credential</a>
-    </div>
-
-    <div class="certification">
-      <h3>Education for Sustainable Development - NPTEL</h3>
-      <span class="cert-date">Issued: May 2025</span><br>
-      <a href="https://internalapp.nptel.ac.in/noc/Ecertificate/?q=NPTEL25HS12S104320714904573649" target="_blank">Verify Credential</a>
-    </div>
-
-    <div class="certification">
-      <h3>The Complete C Programming (Basic to Expert) - Udemy</h3>
-      <span class="cert-date">Issued: Feb 2025</span><br>
-      <a href="https://www.udemy.com/certificate/UC-58833a4d-9045-48b8-82e9-52de4fbc54d9/" target="_blank">Verify Credential</a>
-    </div>
-
-    <div class="certification">
-      <h3>Entrepreneurship - NPTEL</h3>
-      <span class="cert-date">Issued: Nov 2024</span><br>
-      <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24MG93S66450003204003393" target="_blank">Verify Credential</a>
-    </div>
-
-    <div class="certification">
-      <h3>Python Essentials 1 - Cisco Networking Academy</h3>
-      <span class="cert-date">Issued: Oct 2024</span><br>
-      <a href="https://www.credly.com/badges/4060ab28-16ce-4025-9b3f-108497b83f44/print" target="_blank">Verify Credential</a>
-    </div>
-
-    <div class="certification">
-      <h3>Introduction to Data Analytics - NoviTech R&D Pvt Ltd</h3>
-      <span class="cert-date">Issued: Sep 2024<br>Credential ID : NT_B3DA010</span><br>
-      <a href="NoviTech Data Analytics.pdf" target="_blank">Verify Credential</a>
-    </div>
+<!-- HERO -->
+<section class="flex flex-col md:flex-row items-center justify-between max-w-[1100px] mx-auto mt-8 bg-[#1f1f1f] p-8 rounded-xl border border-[#333] gap-8">
+  <div class="text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-bold text-[#bb86fc] mb-2">Dinakar S M</h1>
+    <h4 class="text-[#ccc] text-lg md:text-xl font-medium">Electrical Engineer | Embedded Systems | Data Analyst</h4>
+  </div>
+  <div>
+    <img src="dk_suit_passport.jpg" alt="Dinakar S M Photo" class="w-52 h-52 md:w-56 md:h-56 rounded-lg object-cover shadow-[0_0_10px_#bb86fc]" />
   </div>
 </section>
 
-    <!-- Skills -->
-  <section id="skills" class="animate">
-  <h2>Technical Skills</h2>
+<!-- EDUCATION -->
+<section id="education" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6">Education</h2>
+  <table class="w-full text-left bg-[#2a2a2a] rounded-xl overflow-hidden shadow-[0_0_15px_#3c2a6a]">
+    <thead class="bg-[#1f1f1f]">
+      <tr>
+        <th class="px-4 py-2">College</th>
+        <th class="px-4 py-2">Years</th>
+        <th class="px-4 py-2">Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-[#3b2a6a] hover:text-white">
+        <td class="px-4 py-2 flex items-center gap-2"><img src="srv.png" alt="SRV School" class="w-8 h-8 object-contain">SRV Mat. Hr. Sec. School</td>
+        <td class="px-4 py-2">2019 - 2023</td>
+        <td class="px-4 py-2">89.88%</td>
+      </tr>
+      <tr class="hover:bg-[#3b2a6a] hover:text-white">
+        <td class="px-4 py-2 flex items-center gap-2"><img src="eec.png" alt="Easwari Engineering College" class="w-8 h-8 object-contain">Easwari Engineering College</td>
+        <td class="px-4 py-2">2023 - Present</td>
+        <td class="px-4 py-2">8.59 CGPA</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<<!-- Certifications Section -->
+<section id="certifications" class="animate max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Certifications</h2>
   
-  <div class="skills-container">
-    <!-- Programming -->
-      <div class="skill-card">
-      <img src="c.png" alt="C" />
-      <p>C</p>
+  <div class="certifications-container max-h-[400px] overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-[#bb86fc] scrollbar-track-[#bb86fc]">
+    
+    <!-- Certification Cards -->
+    <div class="certification p-4 bg-[#1f1f1f] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-white font-bold text-xl mb-1">SQL (Basic) - HackerRank</h3>
+      <span class="text-[#aaa] text-sm">Issued: Aug 2025</span><br>
+      <a href="https://www.hackerrank.com/certificates/e943e226b242" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Verify Credential</a>
     </div>
 
-    <div class="skill-card">
-      <img src="python.png" alt="Python" />
-      <p>Python</p>
+    <div class="certification p-4 bg-[#1f1f1f] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-white font-bold text-xl mb-1">Education for Sustainable Development - NPTEL</h3>
+      <span class="text-[#aaa] text-sm">Issued: May 2025</span><br>
+      <a href="https://internalapp.nptel.ac.in/noc/Ecertificate/?q=NPTEL25HS12S104320714904573649" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Verify Credential</a>
     </div>
-  
-    <!-- Python Libraries -->
-    <div class="skill-card">
-      <img src="numpy.png" alt="NumPy" />
-      <p>NumPy</p>
+
+    <div class="certification p-4 bg-[#1f1f1f] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-white font-bold text-xl mb-1">The Complete C Programming (Basic to Expert) - Udemy</h3>
+      <span class="text-[#aaa] text-sm">Issued: Feb 2025</span><br>
+      <a href="https://www.udemy.com/certificate/UC-58833a4d-9045-48b8-82e9-52de4fbc54d9/" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Verify Credential</a>
     </div>
-    <div class="skill-card">
-      <img src="pandas.png" alt="Pandas" />
-      <p>Pandas</p>
+
+    <div class="certification p-4 bg-[#1f1f1f] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-white font-bold text-xl mb-1">Entrepreneurship - NPTEL</h3>
+      <span class="text-[#aaa] text-sm">Issued: Nov 2024</span><br>
+      <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24MG93S66450003204003393" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Verify Credential</a>
     </div>
-    <div class="skill-card">
-      <img src="matplotlib.png" alt="Matplotlib" />
-      <p>Matplotlib</p>
+
+    <div class="certification p-4 bg-[#1f1f1f] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-white font-bold text-xl mb-1">Python Essentials 1 - Cisco Networking Academy</h3>
+      <span class="text-[#aaa] text-sm">Issued: Oct 2024</span><br>
+      <a href="https://www.credly.com/badges/4060ab28-16ce-4025-9b3f-108497b83f44/print" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Verify Credential</a>
     </div>
-     <div class="skill-card">
-      <img src="mysql.png" alt="MySQL" />
-      <p>SQL</p>
+
+    <div class="certification p-4 bg-[#1f1f1f] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-white font-bold text-xl mb-1">Introduction to Data Analytics - NoviTech R&D Pvt Ltd</h3>
+      <span class="text-[#aaa] text-sm">Issued: Sep 2024<br>Credential ID : NT_B3DA010</span><br>
+      <a href="NoviTech Data Analytics.pdf" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Verify Credential</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Technical Skills</h2>
+  <div class="flex flex-wrap justify-center gap-4">
+    <!-- Programming Languages -->
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="c.png" alt="C" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">C</p>
+    </div>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="python.png" alt="Python" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">Python</p>
+    </div>
+    <!-- Libraries -->
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="numpy.png" alt="NumPy" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">NumPy</p>
+    </div>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="pandas.png" alt="Pandas" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">Pandas</p>
+    </div>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="matplotlib.png" alt="Matplotlib" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">Matplotlib</p>
     </div>
     <!-- Tools -->
-    <div class="skill-card">
-      <img src="bi.png" alt="Power BI" />
-      <p>Power BI</p>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="mysql.png" alt="SQL" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">SQL</p>
     </div>
-    <div class="skill-card">
-      <img src="tableau.png" alt="Tableau" />
-      <p>Tableau</p>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="bi.png" alt="Power BI" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">Power BI</p>
     </div>
-    <div class="skill-card">
-      <img src="autocad.webp" alt="AutoCAD" />
-      <p>AutoCAD</p>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="tableau.png" alt="Tableau" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">Tableau</p>
     </div>
-    <!-- Others -->
-    <div class="skill-card">
-      <img src="statistics.png" alt="Statistics" />
-      <p>Statistics</p>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="autocad.webp" alt="AutoCAD" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">AutoCAD</p>
     </div>
+    <div class="flex flex-col items-center bg-[#1f1f1f] rounded-xl w-24 h-24 shadow-md p-2 hover:scale-110 hover:shadow-xl transition-transform duration-300">
+      <img src="statistics.png" alt="Statistics" class="w-12 h-12 mb-1 object-contain">
+      <p class="text-[#ccc] font-semibold text-sm">Statistics</p>
+    </div>
+    <!-- Add more skills if needed -->
   </div>
 </section>
 
-<section id="projects" class="animate">
-  <h2>Projects</h2>
-  <div class="projects-container">
-    <div class="project">
-      <h3>Flipmart Sales Analysis and Dashboard</h3>
-      <p>
-        Built a Power BI dashboard to analyze 1000+ sales records by branch, 
-        category, and time.
+<!-- Projects Section -->
+<section id="projects" class="animate max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Projects</h2>
+
+  <div class="projects-container max-h-[400px] overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-[#bb86fc] scrollbar-track-[#2a2a2a]">
+    <div class="project p-4 bg-[#1e1e1e] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
+      <h3 class="text-[#bb86fc] text-xl font-bold mb-2">Flipmart Sales Analysis and Dashboard</h3>
+      <p class="text-[#ddd] mb-2">
+        Built a Power BI dashboard to analyze 1000+ sales records by branch, category, and time.
       </p>
-      <p><strong>Tools Used:</strong> Power BI, Excel</p>
-      <a href="https://github.com/dinakar186/Flipmart-Sales-Analysis" target="_blank" class="btn-link">View Project</a>
+      <p class="text-[#ddd] mb-2"><strong>Tools Used:</strong> Power BI, Excel</p>
+      <a href="https://github.com/dinakar186/Flipmart-Sales-Analysis" target="_blank" class="btn-link bg-[#bb86fc] text-black font-bold rounded-lg px-4 py-2 inline-block hover:translate-y-[-2px] transition-all">View Project</a>
     </div>
-    <!-- Add more project divs here -->
+
+    
+
+    <!-- Add more project divs here similarly -->
   </div>
 </section>
-  <!-- Contact Section -->
-  <section id="contact" class="animate contact-center">
-    <h2>Contact Me</h2>
-    <ul>
-      <li><i class="fab fa-github"></i> <a href="https://github.com/dinakar186" target="_blank">github.com/dinakar186</a></li>
-      <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dinakarsm/" target="_blank">linkedin.com/in/dinakarsm</a></li>
-      <li><i class="fas fa-phone"></i> <a href="tel:+917639549105">+91-7639549105</a></li>
-      <li><i class="fas fa-envelope"></i> <a href="mailto:dinakarkumaran06@gmail.com">dinakarkumaran06@gmail.com</a></li>
-    </ul>
-  </section>
+<!-- CONTACT -->
+<section id="contact" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333] text-center">
+  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6">Contact Me</h2>
+  <ul class="flex flex-wrap justify-center gap-6">
+    <li><i class="fab fa-github"></i> <a href="https://github.com/dinakar186" target="_blank" class="hover:text-[#e0e0e0] text-[#bb86fc]">github.com/dinakar186</a></li>
+    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dinakarsm/" target="_blank" class="hover:text-[#e0e0e0] text-[#bb86fc]">linkedin.com/in/dinakarsm</a></li>
+    <li><i class="fas fa-phone"></i> <a href="tel:+917639549105" class="hover:text-[#e0e0e0] text-[#bb86fc]">+91-7639549105</a></li>
+    <li><i class="fas fa-envelope"></i> <a href="mailto:dinakarkumaran06@gmail.com" class="hover:text-[#e0e0e0] text-[#bb86fc]">dinakarkumaran06@gmail.com</a></li>
+  </ul>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Dinakar S M. All rights reserved.</p>
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-[#121212] text-[#bbb] text-center p-4 mt-8 border border-[#333]">
+  &copy; 2025 Dinakar S M. All rights reserved.
+</footer>
 
-  <button id="backToTop" title="Back to Top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <script src="page.js"></script>
 </body>
 </html>
