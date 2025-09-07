@@ -1,22 +1,21 @@
-/* ===== Mobile Responsive Patch ===== */
 @media only screen and (max-width: 768px) {
-  /* Containers & sections */
-  .container, .section, .project, .certificate {
-    width: 100% !important;
-    padding: 10px !important;
-    box-sizing: border-box;
+  .project {
+    display: flex;
+    flex-direction: column; /* stack img + text vertically */
+    align-items: center;    /* center them */
+    text-align: center;     /* center text */
   }
 
-  /* Headings */
-  h1 { font-size: 1.5rem !important; }
-  h2 { font-size: 1.3rem !important; }
-  h3 { font-size: 1.1rem !important; }
-
-  /* Images & videos */
-  img, video {
-    max-width: 100%;
-    height: auto;
+  .project img {
+    width: 90%; /* shrink image a bit */
+    margin-bottom: 10px;
   }
+
+  .project .text {
+    width: 90%;
+  }
+}
+
 
   /* Nav/menu */
   nav, .navbar {
