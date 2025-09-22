@@ -24,9 +24,3 @@
   background-color: #333; /* darker thumb on hover */
 }
 
-/* Force Desktop Styling */
-.force-desktop {
-  max-width: 1200px;   /* mimic desktop width */
-  margin: auto;
-  zoom: 0.9;
-}
