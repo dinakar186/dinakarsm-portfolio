@@ -28,36 +28,46 @@
 
 <body class="bg-[#121212] text-[#e0e0e0] font-sans scroll-smooth">
 
-  <!-- Desktop Mode Notification -->
-<div id="desktopAlert" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
-  <div class="bg-[#1f1f1f] p-6 rounded-xl text-center max-w-xs mx-4">
-    <h3 class="text-[#bb86fc] text-xl font-bold mb-2">Ultimate View !</h3>
-    <p class="text-[#ddd] mb-4">This site looks even better on desktop. Want to switch?</p>
-    <div class="flex justify-center gap-4">
-      <button id="switchDesktop" class="bg-[#bb86fc] text-black font-bold px-4 py-2 rounded-lg hover:bg-[#9a67ea] transition">Switch to Desktop</button>
-      <button id="closeAlert" class="bg-[#333] text-[#ddd] font-bold px-4 py-2 rounded-lg hover:bg-[#555] transition">Close</button>
-    </div>
+  <!-- Desktop Mode Alert -->
+<div id="desktopAlert" class="hidden fixed bottom-4 left-4 right-4 bg-[#1f1f1f] border border-[#bb86fc] p-4 rounded-xl shadow-lg z-50 flex flex-col gap-3">
+  <p class="text-white font-bold text-lg text-center">👀 Ultimate View in Desktop Mode!</p>
+  <div class="flex justify-center gap-4">
+    <button id="closeAlert" class="bg-gray-600 px-4 py-2 rounded-lg text-white hover:bg-gray-500 transition">Not Now</button>
+    <button id="switchDesktop" class="bg-[#bb86fc] px-4 py-2 rounded-lg text-black font-bold hover:bg-[#9a67ea] transition">Switch to Desktop</button>
   </div>
 </div>
 
+
 <script>
-  // Detect mobile screen
-  if (window.innerWidth < 768) {
-    document.getElementById('desktopAlert').classList.remove('hidden');
+  const desktopAlert = document.getElementById('desktopAlert');
+  const hasSeenDesktop = localStorage.getItem('desktopModeChosen');
+
+  // Show alert only on mobile + not already chosen
+  if (window.innerWidth < 768 && !window.location.search.includes('desktop=true') && !hasSeenDesktop) {
+    desktopAlert.classList.remove('hidden');
   }
 
   // Close button
   document.getElementById('closeAlert').onclick = () => {
-    document.getElementById('desktopAlert').classList.add('hidden');
+    desktopAlert.classList.add('hidden');
   };
 
-  // "Switch to Desktop" button
+  // Switch to Desktop button
   document.getElementById('switchDesktop').onclick = () => {
-    // Redirect user to the desktop version (usually just reload with desktop UA)
-    alert('Try switching your browser to Desktop Mode.'); // placeholder
-    document.getElementById('desktopAlert').classList.add('hidden');
+    localStorage.setItem('desktopModeChosen', 'true'); // remember choice
+    if (!window.location.search.includes('desktop=true')) {
+      window.location.href = window.location.pathname + "?desktop=true";
+    } else {
+      location.reload();
+    }
   };
+
+  // Apply force-desktop mode if query param exists
+  if (window.location.search.includes('desktop=true')) {
+    document.body.classList.add("force-desktop");
+  }
 </script>
+
 
 
 <!-- NAVBAR -->
