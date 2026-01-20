@@ -63,9 +63,14 @@
 <section id="about" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
   <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">About Me</h2>
   <p class="text-[#ddd] leading-relaxed text-justify">
-   Aspiring Data Analyst and Embedded Systems Engineer skilled in Python (Pandas, NumPy, Matplotlib), SQL, Power BI, Tableau, and Git/GitHub. Experienced in analyzing datasets, building interactive dashboards, and developing embedded hardware solutions. Passionate about leveraging data-driven insights and smart systems to solve real-world problems.<br><br>
-
-Alongside technical expertise, I bring strong soft skills such as problem-solving, adaptability, teamwork, and effective communication and many more — enabling me to collaborate efficiently and deliver impactful results in fast-paced environments.
+   Aspiring Data Analyst and Embedded Systems Engineer with strong skills in Python (Pandas, NumPy, Matplotlib), SQL,
+Power BI, Tableau, and Git/GitHub. Experienced in analyzing datasets, building interactive dashboards, and developing
+embedded hardware solutions using microcontrollers and sensors. 
+<br><br>
+Highly interested in renewable energy analytics, focusing on
+data-driven energy optimization, performance monitoring, and smart system design to improve efficiency and sustainability.
+Also have hands-on experience performing MATLAB-based simulations of power electronics circuits, including DC–DC
+converters and basic power conversion systems.
   </p>
 </section>
 
@@ -334,46 +339,78 @@ Alongside technical expertise, I bring strong soft skills such as problem-solvin
     </div>
   </div>
 </section>
+<section id="projects" class="max-w-6xl mx-auto mt-16 px-4">
+  
+  <!-- Section Title -->
+  <h2 class="text-white text-4xl font-bold text-center mb-12">
+    Projects
+  </h2>
 
-<!-- Projects Section -->
-<section id="projects" class="animate max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
-  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Projects</h2>
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-  <div class="projects-container max-h-[400px] overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-[#bb86fc] scrollbar-track-[#2a2a2a]">
-    
     <!-- Project 1 -->
-    <div class="project p-4 bg-[#1e1e1e] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
-      <h3 class="text-[#bb86fc] text-xl font-bold mb-2">Flipmart Sales Analysis and Dashboard</h3>
-      <p class="text-[#ddd] mb-2">
-        Built a Power BI dashboard to analyze millions of sales records by branch, category, and time.
+    <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition">
+      <h3 class="text-purple-400 text-xl font-semibold mb-3 flex items-center gap-2">
+        📊 Sales Analysis & Dashboard
+      </h3>
+
+      <p class="text-gray-300 mb-6 leading-relaxed">
+        Analyzed retail sales data to identify trends in revenue, profit, customer segments, and shipping modes. Built
+an interactive Power BI dashboard with KPIs, slicers, and visual insights to track time-based performance, categorywise
+profitability, and regional sales distribution. Used Power query for data handling.
       </p>
-      <p class="text-[#ddd] mb-2"><strong>Tools Used :</strong> Power BI, Excel</p>
-      <a href="https://github.com/dinakar186/Flipmart-Sales-Analysis" target="_blank" class="btn-link bg-[#bb86fc] text-black font-bold rounded-lg px-4 py-2 inline-block hover:translate-y-[-2px] transition-all">View Project</a>
+
+      <a href="https://github.com/dinakar186/Flipmart-Sales-Analysis"
+         target="_blank"
+         class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition">
+        View Project
+      </a>
     </div>
 
     <!-- Project 2 -->
-    <div class="project p-4 bg-[#1e1e1e] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
-      <h3 class="text-[#bb86fc] text-xl font-bold mb-2">Hands on Projects Using Python</h3>
-      <p class="text-[#ddd] mb-2">
-        Completed 5 practical projects covering data cleaning, visualization, and analysis using Python and its Libraries.
+    <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition">
+      <h3 class="text-purple-400 text-xl font-semibold mb-3 flex items-center gap-2">
+       📈 Wind Turbine Analysis Using Python
+      </h3>
+
+      <p class="text-gray-300 mb-6 leading-relaxed">
+       Analyzed wind turbine SCADA data to evaluate operational performance and condition monitoring using Python-based
+visualization techniques. Studied the wind speed–power relationship to identify operational anomalies and underperforming
+conditions. Examined temperature trends of critical components to detect early signs of degradation. 
       </p>
-      <p class="text-[#ddd] mb-2"><strong>Tools Used :</strong> Python, Numpy, Pandas</p>
-      <a href="https://github.com/dinakar186/FCC-Data-Analysis-Projects" target="_blank" class="btn-link bg-[#bb86fc] text-black font-bold rounded-lg px-4 py-2 inline-block hover:translate-y-[-2px] transition-all">View Project</a>
+
+      <a href="https://github.com/dinakar186/wind_turbine_analytics/"
+         target="_blank"
+         class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition">
+        View Project
+      </a>
     </div>
-    
-     <!-- Project 3 -->
-    <div class="project p-4 bg-[#1e1e1e] rounded-lg shadow-[0_0_10px_#3c2a6a] hover:shadow-[0_0_20px_#bb86fc]">
-      <h3 class="text-[#bb86fc] text-xl font-bold mb-2">Basic Robotic Arm and its Control</h3>
-      <p class="text-[#ddd] mb-2">
-        Designed a robotic arm and implemented its control system using potentiometers for smooth motion control.
+
+    <!-- Project 3 -->
+     <div class="md:col-span-2 flex justify-center"></div>
+    <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition">
+      <h3 class="text-purple-400 text-xl font-semibold mb-3 flex items-center gap-2">
+      🤖 Basic Robotic Arm and Its Control
+      </h3>
+
+      <p class="text-gray-300 mb-6 leading-relaxed">
+       Designed and developed a robotic arm control system using Arduino, where potentiometers were used as analog input
+devices to precisely control multiple actuators. Mapped potentiometer values to actuator movements for smooth and
+real-time joint control, enabling accurate positioning of the robotic arm. This project strengthened hands-on skills in
+embedded systems, actuator control, sensor interfacing, and microcontroller-based automation.
       </p>
-      <p class="text-[#ddd] mb-2"><strong>Tools Used:</strong> Arduino IDE, Arduino Board</p>
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7344422560899506176/" target="_blank" class="btn-link bg-[#bb86fc] text-black font-bold rounded-lg px-4 py-2 inline-block hover:translate-y-[-2px] transition-all">View Project</a>
+
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7344422560899506176/"
+         target="_blank"
+         class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition">
+        View Project
+      </a>
     </div>
+
   </div>
 </section>
 
-    
 
     <!-- Add more project divs here similarly -->
   </div>
