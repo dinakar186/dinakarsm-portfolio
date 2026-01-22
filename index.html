@@ -2,6 +2,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dinakar S M | Portfolio</title>
+<!-- AOS Library for Scroll Animations -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img.png" />
@@ -27,6 +30,13 @@
 </head>
 
 <body class="bg-[#121212] text-[#e0e0e0] font-sans scroll-smooth">
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    easing: 'ease-in-out', // smooth easing
+    once: true, // animation only once when scrolling down
+  });
+</script>
 
 
 <!-- NAVBAR -->
@@ -59,8 +69,7 @@
   </div>
 </section>
 
-<!-- ABOUT ME -->
-<section id="about" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+<section id="about" data-aos="fade-up" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
   <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">About Me</h2>
   <p class="text-[#ddd] leading-relaxed text-justify">
    Aspiring Data Analyst and Embedded Systems Engineer with strong skills in Python (Pandas, NumPy, Matplotlib), SQL,
@@ -76,38 +85,61 @@ converters and basic power conversion systems.
 
 
 <!-- EDUCATION -->
-<section id="education" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
-  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Education</h2>
-  <table class="w-full text-left bg-[#2a2a2a] rounded-xl overflow-hidden shadow-[0_0_15px_#3c2a6a]">
-    <thead class="bg-[#1f1f1f]">
-      <tr>
-        <th class="px-4 py-2">Institution</th>
-        <th class="px-4 py-2">Year</th>
-         <th class="px-4 py-2">Discipline / Stream</th>
-        <th class="px-4 py-2">Grade</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="hover:bg-[#3b2a6a] hover:text-white">
-        <td class="px-4 py-2 flex items-center gap-2"><img src="eec.png" alt="Easwari Engineering College" class="w-8 h-8 object-contain">Easwari Engineering College</td>
-        <td class="px-4 py-2">2023 - Present</td>
-        <td class="px-4 py-2">B.E.EEE</td>
-        <td class="px-4 py-2">CGPA : 8.59 (Till Sem 4)</td>
-      </tr>
-      <tr class="hover:bg-[#3b2a6a] hover:text-white">
-        <td class="px-4 py-2 flex items-center gap-2"><img src="srv.png" alt="SRV School" class="w-8 h-8 object-contain">SRV Mat. Hr. Sec. School</td>
-        <td class="px-4 py-2">2019 - 2023</td>
-        <td class="px-4 py-2">Bio-Maths (HSC)</td>
-        <td class="px-4 py-2">89.88% (HSC)</td>
-      </tr>
-    </tbody>
-  </table>
+<section id="education" data-aos="fade-up" class="max-w-[900px] mx-auto mt-14">
+  
+  <h2 class="text-[#bb86fc] text-3xl font-extrabold text-center mb-10">
+    Education
+    <span class="block w-20 h-1 bg-[#bb86fc] mx-auto mt-2 rounded-full"></span>
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- College Card -->
+    <div class="bg-gradient-to-br from-[#1a1a1a] to-[#262626] p-6 rounded-2xl border border-[#333] shadow-[0_0_25px_rgba(187,134,252,0.15)] hover:scale-[1.03] transition-all duration-300">
+      
+      <div class="flex items-center gap-4 mb-4">
+        <img src="eec.png" alt="Easwari Engineering College" class="w-14 h-14 bg-white p-2 rounded-xl">
+        <h3 class="text-xl font-bold text-white">
+          Easwari Engineering College
+        </h3>
+      </div>
+
+      <p class="text-gray-300 mb-2">
+        <span class="text-[#bb86fc] font-semibold">Degree:</span> B.E – Electrical & Electronics Engineering
+      </p>
+
+      <p class="text-[#a78bfa] font-bold text-lg">
+        CGPA: 8.59 <span class="text-sm text-gray-400">(Till Sem 4)</span>
+      </p>
+    </div>
+
+    <!-- School Card -->
+    <div class="bg-gradient-to-br from-[#1a1a1a] to-[#262626] p-6 rounded-2xl border border-[#333] shadow-[0_0_25px_rgba(187,134,252,0.15)] hover:scale-[1.03] transition-all duration-300">
+      
+      <div class="flex items-center gap-4 mb-4">
+        <img src="srv.png" alt="SRV School" class="w-14 h-14 bg-white p-2 rounded-xl">
+        <h3 class="text-xl font-bold text-white">
+          SRV Mat. Hr. Sec. School
+        </h3>
+      </div>
+
+      <p class="text-gray-300 mb-2">
+        <span class="text-[#bb86fc] font-semibold">Stream:</span> Bio-Maths (HSC)
+      </p>
+
+      <p class="text-[#a78bfa] font-bold text-lg">
+        Score: 89.88%
+      </p>
+    </div>
+
+  </div>
 </section>
 
 
 
+
 <!-- Certifications Section -->
-<section id="certifications" class="animate max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+<section id="certifications" data-aos="fade-up" class="animate max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
   <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Certifications</h2>
   
   <div class="certifications-container max-h-[400px] overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-[#bb86fc] scrollbar-track-[#2a2a2a]">
@@ -187,7 +219,7 @@ converters and basic power conversion systems.
 
 
 <!-- EXPERIENCE -->
-<section id="experience" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+<section id="experience" data-aos="fade-up" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
   <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Experience</h2>
   
   <div class="space-y-6">
@@ -219,11 +251,93 @@ converters and basic power conversion systems.
   </div>
 </section>
 
+<!-- CODING PROFILES -->
+<section id="profiles" data-aos="fade-right" class="max-w-[900px] mx-auto mt-16">
+  
+  <h2 class="text-[#bb86fc] text-3xl font-extrabold text-center mb-10">
+    Coding Profiles
+    <span class="block w-20 h-1 bg-[#bb86fc] mx-auto mt-2 rounded-full"></span>
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    <!-- GitHub -->
+    <a href=""
+       target="_blank"
+       class="group bg-gradient-to-br from-[#1a1a1a] to-[#262626] p-6 rounded-2xl border border-[#333] 
+              shadow-[0_0_25px_rgba(187,134,252,0.15)] 
+              hover:scale-[1.05] transition-all duration-300">
+
+      <div class="flex items-center gap-4 mb-4">
+        <img src="github.png" alt="GitHub" class="w-12 h-12">
+        <h3 class="text-xl font-bold text-white group-hover:text-[#a78bfa]">
+          GitHub
+        </h3>
+      </div>
+
+      <p class="text-gray-300 text-sm">
+        Projects, data analysis work, dashboards, and version-controlled code.
+      </p>
+
+      <p class="mt-4 text-[#a78bfa] font-semibold">
+        View Repositories →
+      </p>
+    </a>
+
+    <!-- LeetCode -->
+    <a href="https://leetcode.com/u/Dinakar186/"
+       target="_blank"
+       class="group bg-gradient-to-br from-[#1a1a1a] to-[#262626] p-6 rounded-2xl border border-[#333] 
+              shadow-[0_0_25px_rgba(187,134,252,0.15)] 
+              hover:scale-[1.05] transition-all duration-300">
+
+      <div class="flex items-center gap-4 mb-4">
+        <img src="leetcode.png" alt="LeetCode" class="w-12 h-12">
+        <h3 class="text-xl font-bold text-white group-hover:text-[#f89f1b]">
+          LeetCode
+        </h3>
+      </div>
+
+      <p class="text-gray-300 text-sm">
+        Solving DSA problems consistently and improving algorithmic thinking.
+      </p>
+
+      <p class="mt-4 text-[#f89f1b] font-semibold">
+        View Profile →
+      </p>
+    </a>
+
+    <!-- HackerRank -->
+    <a href="https://www.hackerrank.com/profile/dinakarkumaran06"
+       target="_blank"
+       class="group bg-gradient-to-br from-[#1a1a1a] to-[#262626] p-6 rounded-2xl border border-[#333] 
+              shadow-[0_0_25px_rgba(187,134,252,0.15)] 
+              hover:scale-[1.05] transition-all duration-300">
+
+      <div class="flex items-center gap-4 mb-4">
+        <img src="hr.jpeg" alt="HackerRank" class="w-12 h-12">
+        <h3 class="text-xl font-bold text-white group-hover:text-[#2ec866]">
+          HackerRank
+        </h3>
+      </div>
+
+      <p class="text-gray-300 text-sm">
+        Practicing SQL, Python, and problem-solving challenges.
+      </p>
+
+      <p class="mt-4 text-[#2ec866] font-semibold">
+        View Profile →
+      </p>
+    </a>
+
+  </div>
+</section>
+
 
 
 
 <!-- SKILLS -->
-<section id="skills" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
+<section id="skills" data-aos="fade-left" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
   <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Technical Skills</h2>
   <div class="flex flex-wrap justify-center gap-4">
     <!-- Programming Languages -->
@@ -289,131 +403,61 @@ converters and basic power conversion systems.
   </div>
 </section>
 
-<!-- SOFT SKILLS -->
-<section id="soft-skills" class="max-w-[1000px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
-  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Soft Skills</h2>
-  
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
-    <!-- Row 1 -->
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="problem.png" alt="Problem-Solving" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Problem-Solving</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="analytical.png" alt="Analytical Thinking" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Analytical Thinking</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="logical.png" alt="Logical Reasoning" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Logical Reasoning</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="listen.jpg" alt="Attention to Detail" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Attention to Detail</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="trouble.png" alt="Troubleshooting" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Troubleshooting</p>
-    </div>
+<!-- Projects -->
+<section id="projects" data-aos="fade-up" class="max-w-[900px] mx-auto mt-12">
 
-    <!-- Row 2 -->
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="communication.png" alt="Communication" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Communication</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="teamwork.png" alt="Teamwork" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Teamwork</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="adaptability.png" alt="Adaptability" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Adaptability</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="time.png" alt="Time Management" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Time Management</p>
-    </div>
-    <div class="flex flex-col items-center p-3 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_12px_#bb86fc] transition">
-      <img src="creativity.png" alt="Creativity" class="w-10 h-10 mb-2">
-      <p class="text-[#ddd] text-sm font-medium">Creativity</p>
-    </div>
-  </div>
-</section>
-<section id="projects" class="max-w-6xl mx-auto mt-16 px-4">
-  
   <!-- Section Title -->
-    <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Projects</h2>
-
+  <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-8 text-center">
+    Projects
+  </h2>
 
   <!-- Projects Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
     <!-- Project 1 -->
     <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition">
-      <h3 class="text-purple-400 text-xl font-semibold mb-3 flex items-center gap-2">
+      <h3 class="text-purple-400 text-xl font-semibold mb-3">
         📊 Sales Analysis & Dashboard
       </h3>
-
       <p class="text-gray-300 mb-6 leading-relaxed">
-        Analyzed retail sales data to identify trends in revenue, profit, customer segments, and shipping modes. Built
-an interactive Power BI dashboard with KPIs, slicers, and visual insights to track time-based performance, categorywise
-profitability, and regional sales distribution. Used Power query for data handling.
+        Analyzed retail sales data to identify trends in revenue, profit, customer segments, and shipping modes. Built an interactive Power BI dashboard with KPIs, slicers, and visual insights to track time-based performance, categorywise profitability, and regional sales distribution. Used Power query for data handling.
       </p>
-
-      <a href="https://github.com/dinakar186/Flipmart-Sales-Analysis"
-         target="_blank"
-         class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition">
+      <a href="https://github.com/dinakar186/Flipmart-Sales-Analysis" target="_blank" class="block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition text-center">
         View Project
       </a>
     </div>
 
     <!-- Project 2 -->
     <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition">
-      <h3 class="text-purple-400 text-xl font-semibold mb-3 flex items-center gap-2">
-       📈 Wind Turbine Analysis Using Python
+      <h3 class="text-purple-400 text-xl font-semibold mb-3">
+        📈 Wind Turbine Analysis Using Python
       </h3>
-
       <p class="text-gray-300 mb-6 leading-relaxed">
-       Analyzed wind turbine SCADA data to evaluate operational performance and condition monitoring using Python-based
-visualization techniques. Studied the wind speed–power relationship to identify operational anomalies and underperforming
-conditions. Examined temperature trends of critical components to detect early signs of degradation. 
+        Analyzed wind turbine SCADA data to evaluate operational performance and condition monitoring using Python-based visualization techniques. Studied the wind speed–power relationship to identify operational anomalies and underperforming conditions. Examined temperature trends of critical components to detect early signs of degradation.
       </p>
-
-      <a href="https://github.com/dinakar186/wind_turbine_analytics/"
-         target="_blank"
-         class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition">
+      <a href="https://github.com/dinakar186/wind_turbine_analytics/" target="_blank" class="block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition text-center">
         View Project
       </a>
     </div>
 
-    <!-- Project 3 -->
-     <div class="md:col-span-2 flex justify-center"></div>
-    <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition">
-      <h3 class="text-purple-400 text-xl font-semibold mb-3 flex items-center gap-2">
-      🤖 Basic Robotic Arm and Its Control
+    <!-- Project 3 (Second row, left aligned) -->
+    <div class="bg-[#1f1f1f] border border-[#1f2937] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition md:col-span-1">
+      <h3 class="text-purple-400 text-xl font-semibold mb-3">
+        🤖 Basic Robotic Arm and Its Control
       </h3>
-
       <p class="text-gray-300 mb-6 leading-relaxed">
-       Designed and developed a robotic arm control system using Arduino, where potentiometers were used as analog input
-devices to precisely control multiple actuators. Mapped potentiometer values to actuator movements for smooth and
-real-time joint control, enabling accurate positioning of the robotic arm. This project strengthened hands-on skills in
-embedded systems, actuator control, sensor interfacing, and microcontroller-based automation.
+        Designed and developed a robotic arm control system using Arduino, where potentiometers were used as analog input devices to precisely control multiple actuators. Mapped potentiometer values to actuator movements for smooth and real-time joint control, enabling accurate positioning of the robotic arm. This project strengthened hands-on skills in embedded systems, actuator control, sensor interfacing, and microcontroller-based automation.
       </p>
-
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7344422560899506176/"
-         target="_blank"
-         class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition">
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7344422560899506176/" target="_blank" class="block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 rounded-lg transition text-center">
         View Project
       </a>
     </div>
 
   </div>
+
 </section>
 
 
-    <!-- Add more project divs here similarly -->
-  </div>
-</section>
 <!-- LANGUAGES -->
 <section id="languages" class="max-w-[900px] mx-auto mt-12 bg-[#1f1f1f] p-6 rounded-xl border border-[#333]">
   <h2 class="text-[#bb86fc] text-2xl md:text-3xl font-bold border-b-4 border-[#bb86fc] pb-2 mb-6 text-center">Languages</h2>
@@ -440,20 +484,20 @@ embedded systems, actuator control, sensor interfacing, and microcontroller-base
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
     <!-- GitHub -->
     <div class="p-4 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_15px_#bb86fc] transition flex flex-col items-center">
-      <img src="github.png" alt="GitHub" class="w-10 h-10 mb-2">
-      <a href="https://github.com/dinakar186" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">github.com/dinakar186</a>
+      <img src="x.png" alt="GitHub" class="w-10 h-10 mb-2">
+      <a href="https://x.com/smdinakar" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">X (Twitter) </a>
     </div>
     
     <!-- LinkedIn -->
     <div class="p-4 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_15px_#bb86fc] transition flex flex-col items-center">
       <img src="linkedin.png" alt="LinkedIn" class="w-10 h-10 mb-2">
-      <a href="https://www.linkedin.com/in/dinakarsm/" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">linkedin.com/in/dinakarsm</a>
+      <a href="https://www.linkedin.com/in/dinakarsm/" target="_blank" class="text-[#bb86fc] font-semibold hover:underline">Linkedin</a>
     </div>
     
     <!-- Phone -->
     <div class="p-4 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_15px_#bb86fc] transition flex flex-col items-center">
       <img src="mobile.png" alt="Phone" class="w-10 h-10 mb-2">
-      <a href="tel:+917639549105" class="text-[#bb86fc] font-semibold hover:underline">+91-7639549105</a>
+      <a href="tel:+917639549105" class="text-[#bb86fc] font-semibold hover:underline">Phone</a>
     </div>
   </div>
 
@@ -461,7 +505,7 @@ embedded systems, actuator control, sensor interfacing, and microcontroller-base
     <!-- Email -->
     <div class="p-4 bg-[#1e1e1e] rounded-lg hover:shadow-[0_0_15px_#bb86fc] transition flex flex-col items-center">
       <img src="mail.png" alt="Email" class="w-10 h-10 mb-2">
-      <a href="mailto:dinakarkumaran06@gmail.com" class="text-[#bb86fc] font-semibold hover:underline">dinakarkumaran06@gmail.com</a>
+      <a href="mailto:dinakarkumaran06@gmail.com" class="text-[#bb86fc] font-semibold hover:underline">E-mail</a>
     </div>
 
     <!-- Address -->
